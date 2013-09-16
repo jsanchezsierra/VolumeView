@@ -58,7 +58,7 @@
 
 
 /**
- MPVolumenView
+ Other properties
  */
 @property (strong, nonatomic) MPVolumeView *mpVolumeView;
 @property (strong, nonatomic) UIColor *barsColorMin;
@@ -66,13 +66,6 @@
 
 
 #pragma mark - Custom Methods
-/**
- Init the VolumeView with a given number of bars and volume value
- @param frame CGRect
- @param newNumberOfBars NSInteger
- @param newVolume float
- */
-- (id)initWithFrame:(CGRect)frame numberOfBars:(NSInteger)newNumberOfBars;
 - (void) showNativeVolumeControl:(BOOL)showNativeVolume;
 
 @end
