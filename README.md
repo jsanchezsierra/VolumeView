@@ -27,15 +27,19 @@ You need to create an Audio Session to use the VolumeView (See 'Creating an Audi
 * VolumeView.h
 * VolumeView.m  
 
-3.- Create an instance of the Class with the size of the volume view ( frame )
+3.- Import the VolumeView header file in your view controller
+
+    #import "VolumeView.h"
+
+4.- Create an instance of the Class with the size of the volume view ( frame )
 
     VolumeView *volumeView= [[VolumeView alloc] initWithFrame:CGRectMake(175, 335, 110, 55 )  ];
 
-4.- Add the volumenView to the view
+5.- Add the volumenView to the view
 
     [self.view addSubview:volumeView];
 
-5.- Set 'number of bars' and 'bar colors' (optional)
+6.- Set 'number of bars' and 'bar colors' (optional)
 
     [volumeView setNumberOfBars:7];
     [volumeView setBarsColorMin:[UIColor greenColor]];
@@ -49,7 +53,7 @@ You need to create an Audio Session to use the VolumeView class. Follow these st
 
     Go to your target -> Build Phases -> Link Binay with Libraries, and add the AVFoundation framework
 
-2.- Import the framework 
+2.- Import the framework in your controller header file
 
     #import <AVFoundation/AVFoundation.h>
 
